@@ -10,10 +10,15 @@ function Formulario () {
   const [lfl, setLfL] = useState('');
   const [liquidacion, setLiquidacion] = useState('');
   const [ajustes, setAjustes] = useState('');
+  const [totalquiebra, setTotalquiebra] = useState('');
+  const [bazar, setBazar] = useState('');
+  const [fruver, setFruver] = useState('');
+
+
 
   const handleSubmit = (event) => {
     event.preventDefault ();
-    console.log('Presupuesto:', presupuesto, 'Venta sin IVA:', ventaiva, 'Cumplimiento:', cumplimiento, 'LFL:', lfl, 'Liquidacion', liquidacion, 'Ajustes:', ajustes);
+    console.log('Presupuesto:', presupuesto, 'Venta sin IVA:', ventaiva, 'Cumplimiento:', cumplimiento, 'LFL:', lfl, 'Liquidacion', liquidacion, 'Ajustes:', ajustes, 'Total quiebra', totalquiebra);
   }
 
 
@@ -22,7 +27,7 @@ function Formulario () {
         <form onSubmit={handleSubmit}>
             <h1>Buenas noches: Tienda 0707 Mayales</h1>
           <label>
-    Presupuesto:
+          Presupuesto:
     <input type="number" value={presupuesto} onChange={(event) => setPresupuesto(event.target.value)} />
   </label>
   <label>
@@ -37,7 +42,7 @@ function Formulario () {
     LFL:
     <input type="number" value={lfl} onChange={(event) => setLfL(event.target.value)} />
   </label>
-  <h2>QUIEBRAS</h2>
+  <h2>Quiebra</h2>
   <label>
     Liquidacion:
     <input type="number" value={liquidacion} onChange={(event) => setLiquidacion(event.target.value)} />
@@ -47,7 +52,24 @@ function Formulario () {
     Ajustes:
     <input type="number" value={ajustes} onChange={(event) => setAjustes(event.target.value)} />
     <input type="number" name="porcentaje" />
+    <label/>
+    <label/>
+    <h3>Total quiebra</h3>
+    <input type="text" value={totalquiebra} onChange={(event) => setTotalquiebra(event.target.value)} />
+    <input type="number" name="porcentaje" />
   </label>
+    <label>
+    Bazar:
+    <input type="number" value={bazar} onChange={(event) => setBazar(event.target.value)} />
+    <input type="number" name="porcentaje" />
+  </label>
+    <label>
+    Fruver:
+    <input type="number" value={fruver} onChange={(event) => setFruver(event.target.value)} />
+    <input type="number" name="porcentaje" />
+  </label>
+  
+ 
 
   <input type="submit" value="Imprimir" />
 </form>
