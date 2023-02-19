@@ -1,0 +1,38 @@
+
+* {
+    background-color: aqua;
+}
+
+.my-form label {
+    display: block;
+    margin-bottom: 5px;
+    
+  }
+
+  .my-form h1 {
+    text-align: center;
+  }
+  
+  .my-form input[type="number"]{
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .my-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .my-form button:hover {
+    background-color: #0069d9;
+  }
+  

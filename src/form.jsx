@@ -1,5 +1,6 @@
 import  React  from "react";
 import { useState } from 'react';
+import './style.css';
 
 
 function Formulario () {
@@ -24,7 +25,7 @@ function Formulario () {
 
     return (
         
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="my-form">
             <h1>Buenas noches: Tienda 0707 Mayales</h1>
           <label>
           Presupuesto:
@@ -54,8 +55,8 @@ function Formulario () {
     <input type="number" name="porcentaje" />
     <label/>
     <label/>
-    <h3>Total quiebra</h3>
-    <input type="text" value={totalquiebra} onChange={(event) => setTotalquiebra(event.target.value)} />
+    <h3>Total quiebra</h3>  
+    <input type="number" value={totalquiebra} onChange={(event) => setTotalquiebra(event.target.value)} />
     <input type="number" name="porcentaje" />
   </label>
     <label>
@@ -71,7 +72,7 @@ function Formulario () {
   
  
 
-  <input type="submit" value="Imprimir" />
+  <button type="submit" value="Imprimir">Imprimir</button>
 </form>
     )
    
