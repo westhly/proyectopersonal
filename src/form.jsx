@@ -19,7 +19,7 @@ function Formulario () {
 
   const handleSubmit = (event) => {
     event.preventDefault ();
-    console.log('Presupuesto:', presupuesto, 'Venta sin IVA:', ventaiva, 'Cumplimiento:', cumplimiento, 'LFL:', lfl, 'Liquidacion', liquidacion, 'Ajustes:', ajustes, 'Total quiebra', totalquiebra);
+    console.log('Presupuesto:', presupuesto, 'Venta sin IVA:', ventaiva, 'Cumplimiento:', cumplimiento, 'LFL:', lfl, 'Liquidacion:', liquidacion, 'Ajustes:', ajustes, 'Total quiebra:', totalquiebra, 'Bazar:', bazar, 'Fruver:', fruver);
   }
 
 
