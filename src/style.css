@@ -13,13 +13,13 @@
     text-align: center;
   }
   
-  .my-form input[type="number"]{
+  .my-form input[type="text"]{
     display: block;
     padding: 5px;
     margin-bottom: 10px;
     border: 1px solid black;
     border-radius: 5px;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
   }
   
